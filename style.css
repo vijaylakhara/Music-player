@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;700&family=Merriweather+Sans:ital@1&family=Poppins:wght@100;200;300;400;600;700&family=Roboto+Slab:wght@300;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+.main_div{
+   width: 100%;
+   height: 100%;
+   display: grid;
+   place-items: center;
+   
+}
+.music_container{
+    border-radius: 100px;
+    background-color: #ffffff;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgb(0, 0, 0,0.2);
+    width: 26rem;
+    padding: 3rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 25px;
+    align-items: center;
+
+}
+.img_container {
+    width: 17rem;
+    height: 17rem;
+    margin: auto;
+
+
+}
+img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius:50% ;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgb(0, 0, 0,0.4);
+}
+.music_container h2{
+    font-size: 35px;
+    font-weight: 600;
+}
+.music_container h3{
+color: silver;
+}
+.control{
+  width: 15rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin-top: 45px;
+  
+  align-items: center;
+}
+.fa{
+    cursor: pointer;
+    filter: drop-shadow(0 1.2rem 3rem 0.5 rgb(0,0,0,0.4));
+}
+.anime{
+    animation: rotatePlayer 3s linear infinite;
+}
+@keyframes rotatePlayer {
+    from{
+transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+
+    }
+    
+}
